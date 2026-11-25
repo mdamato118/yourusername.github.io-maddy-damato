@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Program Development Portfolio | Maddy Damato</title>
+<meta name="description" content="Research-based aquatics programs and instructor training developed at UC Berkeley Recreation & Wellbeing, 2025–2026.">
+<style>
+  :root {
+    --ink: #1c2b33;
+    --muted: #5b6b73;
+    --bg: #fbfaf7;
+    --card: #ffffff;
+    --accent: #1f6f8b;
+    --accent-soft: #e4f0f4;
+    --line: #dde4e7;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px; }
+  header { padding: 72px 0 36px; border-bottom: 1px solid var(--line); }
+  .eyebrow {
+    font: 600 13px/1 system-ui, sans-serif;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--accent);
+    margin: 0 0 18px;
+  }
+  h1 { font-size: clamp(32px, 6vw, 46px); line-height: 1.12; margin: 0 0 14px; font-weight: 700; }
+  .sub { color: var(--muted); margin: 0; font-size: 18px; }
+  nav { padding: 18px 0; border-bottom: 1px solid var(--line); font: 15px system-ui, sans-serif; }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 18px; white-space: nowrap; }
+  nav a:hover { text-decoration: underline; }
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 28px; line-height: 1.2; margin: 0 0 14px; }
+  h3 { font: 700 13px/1 system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 30px 0 10px; }
+  p { margin: 0 0 16px; }
+  ul, ol { padding-left: 22px; margin: 0 0 18px; }
+  li { margin-bottom: 8px; }
+  .lede { font-size: 19px; }
+  .callout {
+    background: var(--accent-soft); border-left: 4px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0;
+  }
+  .table-wrap { overflow-x: auto; margin: 18px 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font: 15px/1.5 system-ui, sans-serif; min-width: 520px; }
+  th, td { text-align: left; padding: 11px 14px; vertical-align: top; border-bottom: 1px solid var(--line); }
+  th { background: var(--accent-soft); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  footer { margin-top: 56px; padding: 28px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font: 14px system-ui, sans-serif; }
+  @media (max-width: 520px) { body { font-size: 16px; } header { padding-top: 48px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Program Development Portfolio</h1>
+    <p class="sub">Maddy Damato · Aquatics Coordinator, UC Berkeley Recreation &amp; Wellbeing, 2025–2026</p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#overview">Overview</a>
+    <a href="#project-1">1 · Behavioral training</a>
+    <a href="#project-2">2 · Parent-infant swim</a>
+    <a href="#project-3">3 · Noodle ball</a>
+    <a href="#project-4">4 · Level skills system</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="overview">
+  <h2>The need and response</h2>
+  <p class="lede">As Aquatics Coordinator at UC Berkeley Recreation &amp; Wellbeing (2025–2026), I built two research-based programs from scratch: a behavioral management training for swim instructors, and a 9-week parent-infant swim program. Both came from the same conviction I carry from crisis work: behavior is communication, safety comes before skill, and a calm adult is the most powerful tool in the room.</p>
+  <ul>
+    <li><strong>Behavioral management training</strong> gave instructors a shared, trauma-informed framework for fear, refusal, meltdowns and rough play, in place of improvising. It covers child development by age band, positive reinforcement, a stepwise de-escalation protocol, age-specific scripts, and parent communication.</li>
+    <li><strong>The parent-infant program</strong> turned a peer-reviewed developmental study (Zelazo &amp; Weiss, 2006) into a 9-lesson curriculum where the caregiver is the primary coach. It used consistent cues, a no-forced-submersion policy, and a graduation rubric that tracked each baby from reflexive to intentional movement.</li>
+  </ul>
+</section>
+
+<section id="project-1">
+  <h2>Project 1: Behavioral Management Training for swim instructors</h2>
+  <p>I built a training that replaced "wing it" with a consistent, developmentally grounded protocol every instructor could use from day one.</p>
+
+  <p><strong>The problem.</strong> Major swim curricula (Red Cross, YMCA-style programs) are strong on skill progressions and safety. They say little about positive reinforcement systems, structured de-escalation, or adapting for anxious and neurodivergent swimmers. Instructors handled crying, refusal and rough play inconsistently, so kids had different experiences depending on who taught them.</p>
+
+  <h3>How I built it</h3>
+  <ol>
+    <li><strong>Needs assessment.</strong> Listed the challenges instructors actually faced: fear of submerging, mixed levels in one group, changing instructor-child pairings, confusion about cues, peer conflict and rough play, boredom, uneven skill profiles, and supporting autistic swimmers.</li>
+    <li><strong>Literature review.</strong> Synthesized aquatic behavior research (ABA, positive behavior support, self-regulation, motor learning, adaptive swim) by age band: toddlers, Learn-to-Swim 1–3 (ages 5–7), and LTS 4–6 (ages 7–10), plus a section on neurodivergent and high-support swimmers. Each band got its own behavioral aims, management tools and instructional notes.</li>
+    <li><strong>Gap analysis.</strong> Reviewed existing training materials class type by class type and named what was missing.</li>
+    <li><strong>Learning objectives.</strong> Wrote measurable objectives, e.g. "distinguish fear, sensory overload or skill confusion from deliberate defiance" and "apply three de-escalation techniques per age group."</li>
+    <li><strong>Curriculum.</strong> Drafted the handbook in five modules: Child Development Foundations, Positive Reinforcement, De-Escalation, Class Management by Age Group (Parent-Infant, Tiny Tots, LTS 1–3, LTS 4–6, Private), and Parent Communication, plus a poolside cheat sheet.</li>
+  </ol>
+
+  <h3>What instructors got</h3>
+  <ul>
+    <li><strong>One lesson structure for every class:</strong> deck huddle, warm-up and rule rehearsal, two skill blocks, a game, cool-down with an exit rule. Predictability prevents most behavior problems.</li>
+    <li><strong>Three or four rules per level, same words every lesson,</strong> e.g. "Wait on your spot for 'go'."</li>
+    <li><strong>Pre-planned if/then responses</strong> to common behaviors, such as a first-time neutral reminder, a lost turn the second time, and giving a wanderer a job.</li>
+    <li><strong>A stepwise de-escalation protocol:</strong> Notice → Validate → Adjust the demand or offer a choice → Brief break → Return plan.</li>
+    <li><strong>Age-specific scripts</strong> for openings, transitions, fear ("I see you feel worried. We're going to start with brave toes") and correcting rough play.</li>
+    <li><strong>Reinforcement that matches development:</strong> immediate, playful praise for toddlers; effort-based praise and bravery boards for 5–7s; collaborative goals and leadership roles for 7–10s.</li>
+    <li><strong>Scenario practice:</strong> a crying toddler at first submersion, a 6-year-old refusing to jump, a 9-year-old angry about being slower.</li>
+    <li><strong>Note catalog:</strong> notes from previous instructors to address lack of instructor continuity.</li>
+  </ul>
+
+  <h3>From research to design</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>What my literature review found</th><th>What it became in the training</th></tr></thead>
+      <tbody>
+        <tr><td>Predictable routines (same opening, skill blocks, closing ritual, exit rule) cut anxiety and off-task behavior in young kids</td><td>One lesson structure for every class, ending with an exit rule</td></tr>
+        <tr><td>Safety rules work when taught and rehearsed, not just stated</td><td>Rule rehearsal in every warm-up, enforced firmly on day 1; three or four rules in the same words each lesson</td></tr>
+        <tr><td>Long lines and idle time reliably increase problem behavior</td><td>Fast pacing and continuous movement; a wanderer gets a job instead of a wait</td></tr>
+        <tr><td>Splashing, fleeing the wall or refusing submersion usually signal sensory seeking, overload, or a task that's too hard</td><td>The objective to tell fear, overload or confusion apart from defiance; the "adjust the demand" step</td></tr>
+        <tr><td>Forcing submersion is linked to distress and later avoidance</td><td>Gradual exposure ("this is the way we wash our toes → head") and the no-forced-submersion policy</td></tr>
+        <tr><td>Toddlers regulate best through their caregiver</td><td>The caregiver-as-coach model in the parent-infant program</td></tr>
+        <tr><td>7–10s respond to shared rules, goals and real responsibility</td><td>Collaborative goals and leadership roles for LTS 4–6</td></tr>
+        <tr><td>Visual supports, first-then boards and sensory adjustments help autistic and ADHD swimmers</td><td>The added protocols for neurodivergent swimmers</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="project-2">
+  <h2>Project 2: The 9-week Parent-Infant program</h2>
+  <p>I designed a 9-lesson, 25-minute Saturday class for about 10 caregiver-infant pairs (roughly 6–24 months) that turned published developmental research into a curriculum parents could run themselves.</p>
+
+  <p><strong>The problem.</strong> Typical "parent and me" classes lean on songs and submersions. They rarely teach caregivers to read infant cues or regulate their own tone, and they can leave parents believing their baby is "drown-proofed." ISR, the main alternative, takes the parent out of the water and accepts crying as part of the process.</p>
+
+  <p><strong>The research base.</strong> Zelazo &amp; Weiss (2006) found that infants' disorganized, reflexive movements in water organize quickly with repeated training trials, with a cognitive shift around 12 months. The study tracked five behaviors: kicks, arm reaching, the righting response (back to front), locomotion, and a combined "turn and reach." I paired it with attachment theory and scaffolding (caregiver as secure base, peer games) and with social referencing (babies read a new situation from the parent's face, and parents read cues to execute appropriate exercise).</p>
+
+  <h3>How it was structured: a 3-block spiral</h3>
+  <p>I went through five drafts to get here.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Block</th><th>Lessons</th><th>Infant goal</th><th>Caregiver focus</th></tr></thead>
+      <tbody>
+        <tr><td>Foundation</td><td>1–3</td><td>Anticipate the "Ready, Set, Go" cue; organize random splashing into rhythmic kicks; first conditioned dip in lesson 3</td><td>Smiles = safety; a relaxed but firm hold; "calm, confident hands"</td></tr>
+        <tr><td>Intentional action</td><td>4–6</td><td>Help with the back-to-front roll; reach for a toy; push off the wall</td><td>The 3-second wait before helping; sliding support away</td></tr>
+        <tr><td>Cognitive integration</td><td>7–9</td><td>Turn 90°, then 180°, and grab the wall; hold on for 3 seconds</td><td>Observe and score their own baby on the Milestone Map</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>The tools I made</h3>
+  <ul>
+    <li><strong>A conditioned cue for every submersion:</strong> "[Name], Ready, Set, Go!" with water only on "Go," so babies learn to anticipate (the blink response) instead of being startled.</li>
+    <li><strong>Six named holds</strong> with water level and hand placement for each: chest-to-chest "safe base," two-handed ventral, tray, sandwich, back-float support, and wall-side.</li>
+    <li><strong>A cues and songs cheat sheet</strong> with original lyrics set to familiar tunes, each tied to one skill.</li>
+    <li><strong>A Milestone Map</strong> for parents and a <strong>graduation rubric</strong> scoring each behavior as Reflexive, Assisted, or Cognitive. Ten pairs can be scored in about a minute.</li>
+    <li><strong>Group management for 10 pairs:</strong> everyone performs each trial at once, parents walk backward in a clockwise circle, and the instructor coaches parents' hands instead of touching each baby.</li>
+    <li><strong>Safety practices:</strong> a pre-class health check, no forced submersions, layers and towels for warmth, and repeated reminders that lessons don't replace touch supervision.</li>
+  </ul>
+
+  <h3>Design choices worth naming</h3>
+  <ul>
+    <li>The caregiver is the coach and the instructor coaches the caregiver. Skills carry home, and the bond does the regulating.</li>
+    <li>"Crying is information, not misbehavior." A distressed baby goes back to the safe base, then re-engages.</li>
+    <li>The 3-second wait gives the baby processing time, which is how a reflex becomes an intention.</li>
+    <li>I compared the design against Red Cross Parent and Child Aquatics and ISR, and could explain to parents why ours was different.</li>
+  </ul>
+
+  <h3>Results</h3>
+  <div class="table-wrap">
+    <table>
+      <tbody>
+        <tr><td>15 babies in the first class. About 12 pairs per session, 4 sessions run</td></tr>
+        <tr><td>Session 1 had 2 dropouts; no-shows dropped sharply</td></tr>
+        <tr><td>7 of 15 completed the full turn-and-reach; all 15 achieved parts of the sequence</td></tr>
+        <tr><td>Parents loved learning theory and the balance of song, game, and free bonding time</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="project-3">
+  <h2>Project 3: Noodle Ball curriculum</h2>
+  <p>I created a noodle ball (intro water polo) curriculum scalable for mixed-age groups that increased enrollment and parent satisfaction in the program.</p>
+</section>
+
+<section id="project-4">
+  <h2>Project 4: Level skills assessment and stroke progressions</h2>
+  <p>The program ran on an eight-tier level system with a matching stroke progression, so every swimmer was placed, retested and taught from the same map.</p>
+
+  <p><strong>The level system.</strong> Parent &amp; Child, Tiny Tots and Levels 1–6, each defined by 7–10 observable skills. They run from "comfortable splashing" and "blow bubbles" up to a stride and racing dive and a 25-yard IM.</p>
+
+  <h3>The testing routine</h3>
+  <ul>
+    <li>Group swimmers were retested once a week; private swimmers at least halfway through their 4- or 6-lesson package.</li>
+    <li>The coordinator set testing days, and instructors logged results on deck sheets or a Google Form.</li>
+    <li>A swimmer's first test showed where to start in the stroke progression.</li>
+    <li>Testing stayed inside a calm, fun lesson, with games, breaks and silliness still encouraged.</li>
+    <li>Test results were cataloged for future reference in case of instructor changes.</li>
+  </ul>
+
+  <p><strong>The stroke progressions.</strong> Each stroke is broken into small steps a child can win one at a time.</p>
+
+  <p><strong>Why it matters.</strong> It is the same scaffolding as the behavioral training: break a hard task into wins, and give the adult a script. Clear next steps also prevent the frustration that drives most acting out.</p>
+
+  <div class="callout">
+    <p><strong>Build the relationship before you fix the stroke.</strong> The teaching rested on a principle from Steve Haufler's competitive-stroke progressions: a swimmer takes correction from someone they trust.</p>
+    <ul>
+      <li>Give five positives before the first correction.</li>
+      <li>Start each class by reviewing skills already learned, so every swimmer begins with a success.</li>
+      <li>Teach eye to eye: get in the water at the swimmer's level.</li>
+      <li>Make sure the swimmer feels you like them, and the parent feels you like their child.</li>
+    </ul>
+    <p style="margin:0">It's the same idea that runs through crisis work: rapport comes before problem-solving, and people change for someone they trust.</p>
+  </div>
+
+  <p>I adapted the existing stroke progressions and Haufler's theory, and observed the roll-out and instructor response.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Maddy Damato</div>
+</footer>
+
+</body>
+</html>
